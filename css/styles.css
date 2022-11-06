@@ -743,7 +743,7 @@ img {
     padding: 40px;
 }
 
-.button-modal-close {
+.button__modal-close {
    position: absolute;
    display: flex;
    align-items: center;
@@ -760,15 +760,15 @@ img {
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-modal-close:hover,
-.button-modal-close:focus {
+.button__modal-close:hover,
+.button__modal-close:focus {
     fill: var(--color-accent);
 }
 
 
 /* Стилізація форми */
 
-.form-text {
+.modal__text {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -778,7 +778,7 @@ img {
     margin-bottom: 12px;
 }
 
-.form-label {
+.form__label {
     display: block;
     font-weight: 400;
     font-size: 12px;
@@ -788,12 +788,12 @@ img {
     margin-bottom: 4px;
 }
 
-.form-control {
+.form__control {
     position: relative;
     margin-bottom: 10px;
 }
 
-.form-input {
+.form__input {
     width: 100%;
     padding: 11px 42px;
    
@@ -807,11 +807,11 @@ img {
 
 
 
-.form-input:focus {
+.form__input:focus {
     border-color: var(--color-accent);
 }
 
-.form-icon {
+.form__icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -821,11 +821,11 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-control:focus-within .form-icon {
+.form__control:focus-within .form__icon {
     fill: var(--color-accent);
 }
 
-.form-textarea {
+.form__textarea {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -836,7 +836,7 @@ img {
     margin-bottom: 20px;
 }
 
-.form-textarea::placeholder {
+.form__textarea::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -844,7 +844,7 @@ img {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.form-button {
+.form__button {
     margin: 0 auto;
     border: none;
     padding: 10px 52px;
@@ -853,7 +853,7 @@ img {
 
 /* Стилізація чекбоксу */
 
-.contract-container {
+.checkbox__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -861,17 +861,13 @@ img {
     gap: 7px;
 }
 
-.checkbox-input {
+.checkbox__input {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
 
-.checkbox-form {
-    margin-bottom: 30px;
-}
-
-.checkbox-label {
+.checkbox__label {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -879,7 +875,7 @@ img {
     color: var(--color-primary);
 }
 
-.contract-link {
+.checkbox__link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -887,12 +883,12 @@ img {
     color: var(--color-accent);
 }
 
-.checkbox-icon {
+.checkbox__icon {
     border: 2px solid var(--color-title);
     border-radius: 2px;
 }
 
-.checkbox-input:checked + .checkbox-icon {
+.checkbox__input:checked + .checkbox__icon {
     border: none;
     background-color: var(--color-accent);
 
