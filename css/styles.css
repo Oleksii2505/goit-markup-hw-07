@@ -39,7 +39,18 @@ ul {
     padding: 0 15px;
 }
 
-
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 .link {
     text-decoration: none;
@@ -182,7 +193,7 @@ img {
 
 
 /* Стилізація Героя */
-.section.hero-section {
+.hero__section {
     background-color: var(--color-background-alt);
     display: flex;
     flex-direction: column;
@@ -190,9 +201,6 @@ img {
     align-items: center;
     padding-top: 200px;
     padding-bottom: 200px;
-}
-
-.hero-section {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -201,9 +209,7 @@ img {
             url('../images/team-img.jpg');
 }
 
-
-
-.hero-title {
+.hero__title {
 
     max-width: 696px;
     margin: 0 auto 30px;
@@ -244,25 +250,14 @@ img {
 }
 
 
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+
 /* Секція Переваги */
 
 .benefits {
     display: flex;
 }
 
-.benefit-border {
+.benefits__picture {
     display: flex;
     width: 270px;
     height: 120px;
@@ -273,16 +268,16 @@ img {
     border-radius: 4px;
 }
 
-.benefit {
+.benefits__item {
     width: 270px;
     
 }
 
-.benefit:not(:last-child) {
+.benefits__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.benefit-title {
+.benefits__title {
     color: var(--color-title);
     font-weight: 700;
     font-size: 14px;
@@ -292,23 +287,22 @@ img {
     margin-bottom: 10px;
 }
 
-.excerpt {
+.benefits__excerpt {
     color: var(--color-primary);
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
 /* Секція послуги */
 
-.service-section {
+.service__section {
     padding-top: 0;
 }
 
-.service-title,
-.team-title,
-.clients-title {
+.service__title,
+.team__title,
+.clients__title {
     color: var(--color-title);
     font-weight: 700;
     font-size: 36px;
@@ -318,17 +312,17 @@ img {
     margin-bottom: 50px;
 }
 
-.service {
+.service-cards {
     display: flex;
     justify-content: space-between;
 }
 
-.service-box {
+.service-cards__item {
     position: relative;
     display: flex;
 }
 
-.service-label {
+.service-cards__label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -351,18 +345,18 @@ img {
 
 /* Наша команда */
 
-.team-section {
+.team__section {
     background-color: var(--color-background-second);
 }
 
 
-.cards {
+.team-cards {
     display: flex;
     justify-content: space-between;
 }
 
 
-.card {
+.team-cards__item {
     background-color: var(--color-white);
     width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -377,7 +371,7 @@ img {
     
 }
 
-.name {
+.member-team__name {
 
     color: var(--color-title);
     font-weight: 500;
@@ -388,7 +382,7 @@ img {
     text-align: center;
 }
 
-.position {
+.member-team__position {
     color: var(--color-primary);
     font-weight: 400;
     font-size: 16px;
@@ -429,11 +423,11 @@ img {
     gap: 30px;
 }
 
-.clients-item {
+.clients-list__item {
     width: calc((100% - 60px)/6);
 }
 
-.clients-link {
+.clients-list__link {
     width: 100%;
     height: 92px;
     display: flex;
@@ -445,8 +439,8 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
     fill: var(--color-accent);
     border-color: var(--color-accent);    
 }
@@ -457,13 +451,13 @@ img {
 
 /* Кнопки */
 
-.buttons {
+.buttons-list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.btn {
+.buttons-list__btn {
     color: var(--color-title);
     cursor: pointer;
     background-color: #F5F4FA;
@@ -477,33 +471,33 @@ img {
     
 }
 
-.btn.current {
+.buttons-list__btn--current {
     color: var(--color-white);
     background-color: var(--color-accent);
     padding: 6px 26px 6px 25px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.btn:hover,
-.btn:focus {
+.buttons-list__btn:hover,
+.buttons-list__btn:focus {
     color: var(--color-white);
     background-color: var(--color-accent);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.btn-item:not(:last-child) {
+.buttons-list__item:not(:last-child) {
     margin-right: 8px;
 }
 
 /* Секція проєктів */
 
-.projects {
+.gallery__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.project-link {
+.gallery__link {
     
     display: block;
     padding: 0;
@@ -511,23 +505,23 @@ img {
 
 }
 
-.project-link.link:hover,
-.project-link.link:focus {
+.gallery__link.link:hover,
+.gallery__link.link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-card:nth-child(3n) {
+.gallery__card:nth-child(3n) {
     margin-right: 0;
 }
 
-.project-text {
+.project__text {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
     
 }
 
-.project {
+.project__title {
     color: var(--color-title);
     font-style: normal;
     font-weight: 700;
@@ -537,7 +531,7 @@ img {
     margin-bottom: 4px;
 }
 
-.type-project {
+.project__type {
     color: var(--color-primary);
     font-style: normal;
     font-weight: 400;
@@ -546,12 +540,12 @@ img {
     letter-spacing: 0.03em;
 }
 
-.about-project {
+.project {
     position: relative;
     overflow: hidden;
 }
 
-.project-description {
+.project__desc {
     margin: 0;
     padding: 63px 24px;
     font-weight: 400;
@@ -561,7 +555,7 @@ img {
     color: var(--color-white);
 }
 
-.project-link:hover .overlay {
+.gallery__link:hover .overlay {
     transform: translateY(0);
     opacity: 1;
 }
