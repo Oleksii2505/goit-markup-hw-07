@@ -8,14 +8,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
@@ -120,9 +112,9 @@
         </div>
       </section>
       <!-- Послуги -->
-      <section class="section service__section">
+      <section class="section service-section">
         <div class="container">
-          <h2 class="service__title">Чим ми займаємося</h2>
+          <h2 class="service-section__title">Чим ми займаємося</h2>
           <ul class="service__set">
             <li class="service-card">
               <p class="service-card__label">Десктопні додатки</p>
@@ -140,9 +132,9 @@
         </div>
       </section>
       <!-- Команда -->
-      <section class="section team__section">
+      <section class="section team-section">
         <div class="container">
-          <h2 class="team__title">Наша команда</h2>
+          <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-cards">
             <li class="team-cards__item">
               <img src="./images/img1.jpg" alt="Ігор Дем'яненко" width="270" />
@@ -348,7 +340,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="address__container">
+        <div>
           <a class="logo footer-logo" href="./index.html"
             ><span class="logo__word1">Web</span><span class="logo__word2">Studio</span></a
           >
@@ -373,8 +365,8 @@
           </address>
         </div>
 
-        <div class="join__container">
-          <p class="join__text">Приєднуйтесь</p>
+        <div class="join-thumb">
+          <p class="join-thumb__text">Приєднуйтесь</p>
           <ul class="soc-list">
             <li class="soc-list__item">
               <a href="#" class="soc-list__link join">
@@ -406,8 +398,8 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe__container">
-          <p class="subscribe__text">Підпишіться на розсилку</p>
+        <div class="subscribe-thumb">
+          <p class="subscribe-thumb__text">Підпишіться на розсилку</p>
 
           <form class="subscribe__form" name="subscribe-form">
             <label class="subscribe__label" for="subscribe"></label>
@@ -469,7 +461,7 @@
             placeholder="Введіть текст"
           ></textarea>
 
-          <div class="checkbox__container">
+          <div class="checkbox">
             <input
               class="checkbox__input visually-hidden"
               id="terms-checkbox"

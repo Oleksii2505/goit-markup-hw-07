@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    color: var(--color-white);
-    background-color: var(--color-accent);
+    color: $color-white;
+    background-color: $color-accent;
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
@@ -17,10 +17,11 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $color-white;
+        background-color: $color-button;
+    }
 }
 
-.primary-button:hover,
-.primary-button:focus {
-    color: var(--color-white);
-    background-color: #188ce8;
-}

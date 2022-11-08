@@ -1,6 +1,16 @@
 
-.service__section {
+.service-section {
     padding-top: 0;
+
+    .service-section__title {
+       color: $color-title;
+       font-weight: 700;
+       font-size: 36px;
+       line-height: 1.16;
+       letter-spacing: 0.03em;
+       text-align: center;
+       margin-bottom: 50px;
+    }
 }
 
 .service__set {
@@ -9,12 +19,3 @@
     justify-content: space-between;
 }
 
-.service__title {
-        color: var(--color-title);
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        text-align: center;
-        margin-bottom: 50px;
-    }

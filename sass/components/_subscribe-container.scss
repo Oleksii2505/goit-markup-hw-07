@@ -1,14 +1,14 @@
-.subscribe__container {
+.subscribe-thumb {
     margin-left: 93px;
-}
 
-.subscribe__text {
-    color: var(--color-white);
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    .subscribe-thumb__text {
+       color: $color-white;
+       font-weight: 700;
+       line-height: 1.14;
+       letter-spacing: 0.03em;
+       text-transform: uppercase;
+       margin-bottom: 20px;
+    }
 }
 
 .subscribe__form {
@@ -24,18 +24,18 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     outline: none;
-    color: var(--color-background);
+    color: $color-white;
 
     background-color: inherit;
-}
 
-.subscribe__input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .subscribe-button {
