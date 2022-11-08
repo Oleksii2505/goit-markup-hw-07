@@ -1,0 +1,20 @@
+
+.service__section {
+    padding-top: 0;
+}
+
+.service__set {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__title {
+        color: var(--color-title);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 50px;
+    }
