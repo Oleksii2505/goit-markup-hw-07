@@ -75,7 +75,7 @@ img {
   padding: 94px 0;
 }
 
-.team-cards, .soc-list, .service__set, .menu, .gallery, .footer .footer__nav, .contacts, .clients-list, .buttons-list, .benefits {
+.team-cards, .soc-list, .service .service__set, .menu, .gallery, .footer .footer__nav, .contacts, .clients-list, .buttons-list, .benefits {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -861,10 +861,10 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.service-section {
+.service {
   padding-top: 0;
 }
-.service-section .service-section__title {
+.service .service__title {
   color: #212121;
   font-weight: 700;
   font-size: 36px;
@@ -873,8 +873,7 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
-
-.service__set {
+.service .service__set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1021,10 +1020,10 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-section {
+.team {
   background-color: #F5F4FA;
 }
-.team-section .team-section__title {
+.team .team__title {
   color: #212121;
   font-weight: 700;
   font-size: 36px;
